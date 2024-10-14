@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { InfiniteScroll } from "./InfniteScroll";
+import { ContinuousScroll } from "./components/ContinuousScroll";
 
 export const App = () => {
   return (
     <Container>
       <Title>Working as intended!</Title>
-      <InfiniteScroll />
+      <ContinuousScroll />
     </Container>
   );
 };

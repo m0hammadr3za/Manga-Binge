@@ -1,60 +1,64 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { getChapter } from "./chapters";
 
-const initialChapter = getChapter(1);
-
-export const InfiniteScroll = () => {
-  const [chapters, setChapters] = useState([initialChapter]);
+export const ContinuousScroll = () => {
+  const [chapters, setChapters] = useState<any>([]);
   const [isFinished, setIsFinished] = useState(false);
-
-  const [triggerPage, setTriggerPage] = useState<any>(null);
+  const triggerPageRef = useRef(null);
 
   useEffect(() => {
+    const initialChapter = getChapter(1);
+    setChapters([initialChapter]);
+  }, []);
+
+  useEffect(() => {
+    const triggerPage = triggerPageRef.current;
     if (!triggerPage) return;
+
+    const handleIntersection = () => {
+      const newChapter = getChapter(chapters.length + 1);
+      if (!newChapter) {
+        setIsFinished(true);
+      } else {
+        setChapters((previousChapters: any) => [
+          ...previousChapters,
+          newChapter,
+        ]);
+      }
+    };
 
     const observer = new IntersectionObserver(
       (entries) => {
-        if (entries[0].isIntersecting) {
-          const newChapter = getChapter(chapters.length + 1);
-          if (!newChapter) {
-            setIsFinished(true);
-          } else {
-            setChapters((previousChapters) => [
-              ...previousChapters,
-              newChapter,
-            ]);
-          }
-        }
+        if (entries[0].isIntersecting) handleIntersection();
       },
-      { threshold: 1 }
+      { threshold: 0 }
     );
 
     observer.observe(triggerPage);
     return () => observer.unobserve(triggerPage);
-  }, [chapters, triggerPage]);
+  }, [chapters, triggerPageRef]);
 
   return (
-    <StyledInfiniteScroll>
+    <StyledContinuousScroll>
       <ScrollBar>
         {chapters.map((chapter: any, chapterIndex: number) => {
-          const isLongChapter = chapter.pages.length >= 10;
-          const chapterMiddle = Math.ceil(chapter.pages.length / 2);
-          const chapterEnd = chapter.pages.length - 1;
+          const isLastChapter = chapterIndex === chapters.length - 1;
 
           return (
             <div key={chapterIndex}>
               <ChapterTitle>Chapter {chapterIndex + 1}</ChapterTitle>
 
               {chapter.pages.map((page: any, pageIndex: number) => {
-                const triggerIndex = isLongChapter ? chapterMiddle : chapterEnd;
-                const isTriggerPage = pageIndex === triggerIndex;
-
+                const isLastPage = pageIndex === chapter.pages.length - 1;
                 const title = `${chapterIndex + 1}-${pageIndex + 1}`;
 
                 return (
-                  <Item key={page} ref={isTriggerPage ? setTriggerPage : null}>
+                  <Item
+                    key={page}
+                    ref={isLastChapter && isLastPage ? triggerPageRef : null}
+                  >
                     <ItemIndexText>{title}</ItemIndexText>
                   </Item>
                 );
@@ -67,11 +71,11 @@ export const InfiniteScroll = () => {
           <FinishedMessage>You have reached the end!</FinishedMessage>
         )}
       </ScrollBar>
-    </StyledInfiniteScroll>
+    </StyledContinuousScroll>
   );
 };
 
-const StyledInfiniteScroll = styled.div`
+const StyledContinuousScroll = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
