@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import { ContinuousScroll } from "./components/ContinuousScroll/ContinuousScroll";
+import { useKeyboardNavigation } from "./hooks/useKeyboardNavigation";
+import { useControllerNavigation } from "./hooks/useControllerNavigation";
 
 export const App = () => {
+  useKeyboardNavigation(500);
+  useControllerNavigation(5);
+
   return (
     <Container>
       <Title>Working as intended!</Title>
