@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { SequentialLoading } from "./components/SequentialLoading/SequentialLoading";
+import { ContinuousScroll } from "./components/ContinuousScroll/ContinuousScroll";
 
 export const App = () => {
   return (
     <Container>
       <Title>Working as intended!</Title>
-      <SequentialLoading />
+      <ContinuousScroll />
     </Container>
   );
 };

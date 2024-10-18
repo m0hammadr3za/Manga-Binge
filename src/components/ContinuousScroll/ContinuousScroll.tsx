@@ -52,15 +52,18 @@ export const ContinuousScroll = () => {
 
               {chapter.pages.map((page: any, pageIndex: number) => {
                 const isLastPage = pageIndex === chapter.pages.length - 1;
-                const title = `${chapterIndex + 1}-${pageIndex + 1}`;
 
                 return (
-                  <Item
-                    key={page}
+                  <PageContainer
+                    key={page.src}
                     ref={isLastChapter && isLastPage ? triggerPageRef : null}
                   >
-                    <ItemIndexText>{title}</ItemIndexText>
-                  </Item>
+                    <Page
+                      src={page.src}
+                      width={page.width}
+                      height={page.height}
+                    />
+                  </PageContainer>
                 );
               })}
             </div>
@@ -93,21 +96,16 @@ const ChapterTitle = styled.h1`
   margin-bottom: 20px;
 `;
 
-const Item = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const PageContainer = styled.div`
   width: 100%;
-  height: 800px;
-  background-color: #cfcfcf;
-  border-radius: 10px;
+  background-color: #333333;
   margin-bottom: 50px;
 `;
 
-const ItemIndexText = styled.p`
-  font-size: 196px;
-  font-weight: 700;
-  color: #9e9e9e;
+const Page = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
 `;
 
 const FinishedMessage = styled.h1`
