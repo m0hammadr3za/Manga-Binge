@@ -42,7 +42,7 @@ export const ContinuousScroll = () => {
 
   return (
     <StyledContinuousScroll>
-      <ScrollBar>
+      <div>
         {chapters.map((chapter: any, chapterIndex: number) => {
           const isLastChapter = chapterIndex === chapters.length - 1;
 
@@ -52,11 +52,13 @@ export const ContinuousScroll = () => {
 
               {chapter.pages.map((page: any, pageIndex: number) => {
                 const isLastPage = pageIndex === chapter.pages.length - 1;
+                const isDoublePage = page.width > page.height;
 
                 return (
                   <PageContainer
                     key={page.src}
                     ref={isLastChapter && isLastPage ? triggerPageRef : null}
+                    isDoublePage={isDoublePage}
                   >
                     <Page
                       src={page.src}
@@ -73,7 +75,7 @@ export const ContinuousScroll = () => {
         {isFinished && (
           <FinishedMessage>You have reached the end!</FinishedMessage>
         )}
-      </ScrollBar>
+      </div>
     </StyledContinuousScroll>
   );
 };
@@ -85,10 +87,6 @@ const StyledContinuousScroll = styled.div`
   justify-content: center;
 `;
 
-const ScrollBar = styled.div`
-  width: 800px;
-`;
-
 const ChapterTitle = styled.h1`
   font-size: 58px;
   text-align: center;
@@ -96,10 +94,12 @@ const ChapterTitle = styled.h1`
   margin-bottom: 20px;
 `;
 
-const PageContainer = styled.div`
-  width: 100%;
+const PageContainer = styled.div<{ isDoublePage: boolean }>`
+  width: ${({ isDoublePage }) => (isDoublePage ? "1600px" : "800px")};
   background-color: #333333;
   margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
 `;
 
 const Page = styled.img`
