@@ -5,7 +5,7 @@ import { useControllerNavigation } from "./hooks/useControllerNavigation";
 
 export const App = () => {
   useKeyboardNavigation(500);
-  useControllerNavigation(5);
+  useControllerNavigation(5, 25, 5);
 
   return (
     <Container>

@@ -86,7 +86,7 @@ const StyledContinuousScroll = styled.div`
 `;
 
 const ScrollBar = styled.div`
-  width: 600px;
+  width: 800px;
 `;
 
 const ChapterTitle = styled.h1`
