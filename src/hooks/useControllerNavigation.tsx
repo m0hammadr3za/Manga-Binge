@@ -8,7 +8,7 @@ export const useControllerNavigation = (
   const requestRef = useRef<number | undefined>();
   const isMountedRef = useRef(true);
   const hasGamepadRef = useRef(false);
-  const lastJumpTimeRef = useRef<number>(0); // Ref to control jump intervals
+  const lastJumpTimeRef = useRef<number>(0);
 
   useEffect(() => {
     isMountedRef.current = true;
@@ -61,7 +61,7 @@ export const useControllerNavigation = (
                 /*** Instant Scroll ***/
                 const now = Date.now();
                 const timeSinceLastJump = now - lastJumpTimeRef.current;
-                if (timeSinceLastJump >= 150) {
+                if (timeSinceLastJump >= 200) {
                   const direction = Math.sign(totalScrollInput);
                   jumpPage(direction);
                   lastJumpTimeRef.current = now;
