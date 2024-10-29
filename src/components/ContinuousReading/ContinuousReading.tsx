@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import { getChapter } from "./chapters";
 
-export const ContinuousScroll = () => {
+export const ContinuousReading = () => {
   const [chapters, setChapters] = useState<any>([]);
   const [isFinished, setIsFinished] = useState(false);
   const triggerPageRef = useRef(null);
@@ -41,7 +41,7 @@ export const ContinuousScroll = () => {
   }, [chapters, triggerPageRef]);
 
   return (
-    <StyledContinuousScroll>
+    <StyledContinuousReading>
       <div>
         {chapters.map((chapter: any, chapterIndex: number) => {
           const isLastChapter = chapterIndex === chapters.length - 1;
@@ -76,11 +76,11 @@ export const ContinuousScroll = () => {
           <FinishedMessage>You have reached the end!</FinishedMessage>
         )}
       </div>
-    </StyledContinuousScroll>
+    </StyledContinuousReading>
   );
 };
 
-const StyledContinuousScroll = styled.div`
+const StyledContinuousReading = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
