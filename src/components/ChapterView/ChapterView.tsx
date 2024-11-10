@@ -97,13 +97,13 @@ const Button = styled.button`
 const Title = styled.h1`
   font-size: 58px;
   text-align: center;
-  color: #e7e7e7;
+  color: ${({ theme }) => theme.colors.text};
   margin-bottom: 20px;
 `;
 
 const PageContainer = styled.div<{ isDoublePage: boolean }>`
   width: ${({ isDoublePage }) => (isDoublePage ? "1600px" : "800px")};
-  background-color: #333333;
+  background-color: #8c8c8c;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;

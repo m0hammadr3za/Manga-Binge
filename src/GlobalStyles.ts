@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ isScrollbarVisible: boolean }>`
   *,
   *::before,
   *::after {
@@ -14,17 +14,43 @@ const GlobalStyle = createGlobalStyle`
   height: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: ${({ theme }) => theme.typography.fontSize.medium};
+  line-height: ${({ theme }) => theme.typography.lineHeigh.medium};
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-  background-color: #fff;
-  color: #333;
-  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
+  overflow: ${({ isScrollbarVisible }) =>
+    isScrollbarVisible ? "auto" : "hidden"};
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  /* Custom Scrollbar Styles */
+  body::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  body::-webkit-scrollbar-track {
+    background: ${({ theme }) => theme.scrollbarTrack};
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.scrollbarThumb};
+    border-radius: 6px;
+    border: 3px solid ${({ theme }) => theme.scrollbarTrack};
+  }
+
+  /* Firefox */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: ${({ theme }) =>
+      `${theme.scrollbarThumb} ${theme.scrollbarTrack}`};
   }
 
   a {
