@@ -9,7 +9,7 @@ export const StylingWrapper = (props: any): any => {
 
   const { breakpoints, colors, radius, shadows, spacing, typography } = theme;
 
-  const finalColors = colors.lightTheme;
+  const finalColors = colors.darkTheme;
 
   const finalTheme = {
     breakpoints,
