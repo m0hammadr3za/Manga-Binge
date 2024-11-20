@@ -7,11 +7,11 @@
 
   --color-background-light: var(--color-white);
   --color-background-dark: var(--color-black);
-  --color-background: var(--color-background-dark);
+  --color-background: var(--color-background-light);
 
   --color-text-light: var(--color-white);
   --color-text-dark: var(--color-black);
-  --color-text: var(--color-text-light);
+  --color-text: var(--color-text-dark);
 
   /* Font sizes */
   --font-size-regular: 18px;
@@ -41,4 +41,9 @@
 
   /* Content Width */
   --content-max-width: 1366px;
+}
+
+[data-theme="dark"] {
+  --color-background: var(--color-background-dark);
+  --color-text: var(--color-text-light);
 }

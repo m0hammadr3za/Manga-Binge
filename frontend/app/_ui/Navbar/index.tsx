@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./styles.module.scss";
+import ToggleThemeButton from "../ToggleThemeButton";
 
 export const Navbar = () => {
   return (
@@ -11,9 +12,7 @@ export const Navbar = () => {
       </div>
 
       <div>
-        <button className={styles["navbar__theme-toggle-button"]}>
-          Toggle Theme
-        </button>
+        <ToggleThemeButton />
       </div>
     </div>
   );
