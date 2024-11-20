@@ -1,0 +1,44 @@
+@use "breakpoints";
+
+:root {
+  /* Colors */
+  --color-black: rgb(0, 0, 0);
+  --color-white: rgb(255, 255, 255);
+
+  --color-background-light: var(--color-white);
+  --color-background-dark: var(--color-black);
+  --color-background: var(--color-background-dark);
+
+  --color-text-light: var(--color-white);
+  --color-text-dark: var(--color-black);
+  --color-text: var(--color-text-light);
+
+  /* Font sizes */
+  --font-size-regular: 18px;
+  --font-size-medium: 24px;
+  --font-size-large: 34px;
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing */
+  --spacing-regular: 24px;
+  --spacing-large: 64px;
+  --spacing-extra-large: 96px;
+
+  /* Opacities */
+  --opacity-high: 0.87;
+  --opacity-regular: 0.5;
+  --opacity-low: 0.25;
+
+  /* Transition Durations */
+  --transition-duration-fast: 200ms;
+  --transition-duration-regular: 300ms;
+  --transition-duration-slow: 500ms;
+
+  /* Content Width */
+  --content-max-width: 1366px;
+}

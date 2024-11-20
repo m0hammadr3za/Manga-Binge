@@ -1,0 +1,18 @@
+.layout {
+  --space-around-content: 40px var(--spacing-regular);
+  --nav-cards-gap: 50px;
+  --content-container-max-width: var(--content-max-width);
+
+  display: flex;
+  justify-content: center;
+  margin: 0 var(--spacing-regular);
+  padding: 60px 0 100px 0;
+}
+
+.layout__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nav-cards-gap);
+  max-width: var(--content-container-max-width);
+  width: 100%;
+}

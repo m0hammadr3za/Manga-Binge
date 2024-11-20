@@ -1,0 +1,58 @@
+.manga-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.manga-card__image-container {
+  position: relative;
+  height: 450px;
+  object-fit: "contain";
+}
+
+.manga-card__cover-image {
+  object-fit: cover;
+}
+
+.manga-card__info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.manga-card__title-author-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 60%;
+}
+
+.manga-card__title {
+  font-size: 20px;
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.manga-card__author {
+  font-size: 16px;
+  font-weight: var(--font-weight-medium);
+  opacity: 0.5;
+}
+
+.manga-card__view-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.manga-card__view-count {
+  font-size: 14px;
+  font-weight: var(--font-weight-semi-bold);
+  opacity: 0.4;
+}
+
+.manga-card__rating {
+  font-size: 14px;
+  font-weight: var(--font-weight-semi-bold);
+  opacity: 0.4;
+}

@@ -1,0 +1,38 @@
+// @mixin min-width-xs {
+//   @media (min-width: 480px) {
+//     @content;
+//   }
+// }
+
+// @mixin min-width-sm {
+//   @media (min-width: 640px) {
+//     @content;
+//   }
+// }
+
+// medium screens
+@mixin min-width-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// large screens
+@mixin min-width-lg {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// extra large screens
+@mixin min-width-xl {
+  @media (min-width: 1280px) {
+    @content;
+  }
+}
+
+// @mixin min-width-2xl {
+//   @media (min-width: 1536px) {
+//     @content;
+//   }
+// }
