@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
-import styles from "./styles.module.scss";
-import { Navbar } from "../Navbar";
+import styles from "./index.module.scss";
+import { Navbar } from "./Navbar";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
   return (

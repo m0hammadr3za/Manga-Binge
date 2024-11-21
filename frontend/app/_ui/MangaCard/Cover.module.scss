@@ -1,0 +1,44 @@
+.cover {
+  --height: 450px;
+  --chapter-background-color: var(--color-background);
+  --chapter-background-opacity: 0.75;
+  --chapter-text-opacity: 0.9;
+  --chapter-font-size: 36px;
+  --chapter-font-weight: var(--font-weight-bold);
+  --chapter-padding: 5px 15px 5px 30px;
+  --chapter-bottom-space: 15px;
+
+  position: relative;
+}
+
+.cover__image-container {
+  position: relative;
+  height: var(--height);
+  object-fit: "contain";
+}
+
+.cover__cover-image {
+  object-fit: cover;
+}
+
+.cover__chapter-container {
+  position: absolute;
+  bottom: var(--chapter-bottom-space);
+  left: 0;
+}
+
+.cover__chapter-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--chapter-background-color);
+  opacity: var(--chapter-background-opacity);
+}
+
+.cover__chapter {
+  position: relative;
+  font-size: var(--chapter-font-size);
+  font-weight: var(--chapter-font-weight);
+  padding: var(--chapter-padding);
+  opacity: var(--chapter-text-opacity);
+}
