@@ -27,14 +27,23 @@ interface MangaCardProps {
 const MangaCard: React.FC<MangaCardProps> = ({ manga }) => {
   return (
     <Link href={`/manga/${manga.id}`} className={styles["manga-card"]}>
-      <div className={styles["manga-card__image-container"]}>
-        <Image
-          className={styles["manga-card__cover-image"]}
-          src={manga.cover_image}
-          alt={manga.title}
-          fill
-          priority
-        />
+      <div className={styles["manga-card__cover"]}>
+        <div className={styles["manga-card__image-container"]}>
+          <Image
+            className={styles["manga-card__cover-image"]}
+            src={manga.cover_image}
+            alt={manga.title}
+            fill
+            priority
+          />
+        </div>
+
+        <div className={styles["manga-card__latest-chapter-container"]}>
+          <div className={styles["manga-card__latest-chapter-background"]} />
+          <p className={styles["manga-card__latest-chapter"]}>
+            #{manga.chapters_count}
+          </p>
+        </div>
       </div>
 
       <div className={styles["manga-card__info-container"]}>
