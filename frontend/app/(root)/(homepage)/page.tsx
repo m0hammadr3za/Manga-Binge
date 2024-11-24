@@ -1,7 +1,7 @@
 // import Image from "next/image";
 import styles from "./styles.module.scss";
 import { Layout } from "@/app/_ui/Layout";
-import MangaCard from "../../_ui/MangaCard";
+import MangaCard from "@/app/_ui/MangaCard";
 import { Fragment } from "react";
 import { mockData } from "./mock-data";
 

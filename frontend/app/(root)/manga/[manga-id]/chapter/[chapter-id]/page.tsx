@@ -1,5 +1,12 @@
+import { ChapterView } from "@/app/_ui/ChapterView";
+import { Layout } from "@/app/_ui/Layout";
+
 const SingleChapter = () => {
-  return <h1>SINGLE CHAPTER BY ID</h1>;
+  return (
+    <Layout>
+      <ChapterView />
+    </Layout>
+  );
 };
 
 export default SingleChapter;
