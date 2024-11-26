@@ -1,52 +1,18 @@
 "use client";
 
-import { createContext, useState, useEffect, ReactNode } from "react";
+import React, { useContext, useEffect } from "react";
+import { OptionsContext } from "./OptionsContext";
 
-interface ThemeContextProps {
-  theme: "light" | "dark";
-  toggleTheme: () => void;
-}
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const { isDarkTheme } = useContext(OptionsContext);
 
-export const ThemeContext = createContext<ThemeContextProps>({
-  theme: "dark", // default value
-  toggleTheme: () => {},
-});
-
-interface ThemeProviderProps {
-  children: ReactNode;
-}
-
-export const ThemeProvider = ({ children }: ThemeProviderProps) => {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-
-  // Check for saved preference or system preference on initial load
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme") as "light" | "dark" | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
+    if (isDarkTheme) {
+      document.documentElement.setAttribute("data-theme", "dark");
     } else {
-      const prefersDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setTheme(prefersDark ? "dark" : "light");
+      document.documentElement.removeAttribute("data-theme");
     }
-  }, []);
+  }, [isDarkTheme]);
 
-  // Update the data-theme attribute and save preference
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", theme);
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "light" ? "dark" : "light"));
-  };
-
-  console.log(theme);
-
-  return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+  return <>{children}</>;
 };

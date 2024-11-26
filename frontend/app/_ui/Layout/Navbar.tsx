@@ -1,5 +1,5 @@
 import { Logo } from "./Logo";
-import { ToggleThemeButton } from "./ToggleThemeButton";
+import { ToggleOptionsOverlay } from "./ToggleOptionsOverlay";
 import styles from "./Navbar.module.scss";
 
 export const Navbar = () => {
@@ -10,7 +10,7 @@ export const Navbar = () => {
       </div>
 
       <div>
-        <ToggleThemeButton />
+        <ToggleOptionsOverlay />
       </div>
     </div>
   );
