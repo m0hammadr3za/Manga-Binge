@@ -3,14 +3,14 @@
 import { createContext, useState, useEffect, ReactNode } from "react";
 
 interface OptionsContextProps {
-  showOptionsOverlay: boolean;
-  isDarkTheme: boolean;
-  showGoToTopButton: boolean;
-  showGoToBottomButton: boolean;
-  toggleOptionsOverlay: () => void;
-  toggleIsDark: () => void;
-  toggleGoToTopButton: () => void;
-  toggleGoToBottomButton: () => void;
+  optionsOverlay: "show" | "hide";
+  theme: "light" | "dark";
+  goToTopButton: "show" | "hide";
+  goToBottomButton: "show" | "hide";
+  toggleOptionsOverlay: (newState: "show" | "hide") => void;
+  toggleTheme: (newTheme: "light" | "dark") => void;
+  toggleGoToTopButton: (newState: "show" | "hide") => void;
+  toggleGoToBottomButton: (newState: "show" | "hide") => void;
 }
 
 export const OptionsContext = createContext<OptionsContextProps>(
@@ -18,90 +18,85 @@ export const OptionsContext = createContext<OptionsContextProps>(
 );
 
 export const OptionsProvider = ({ children }: { children: ReactNode }) => {
-  const [showOptionsOverlay, setShowOptionsOverlay] = useState(false);
+  const [optionsOverlay, setOptionsOverlay] = useState<"show" | "hide">("hide");
 
-  const [isDarkTheme, setIsDarkTheme] = useState<boolean>(() => {
-    const storedTheme = localStorage.getItem("isDarkTheme");
-    if (storedTheme) {
-      try {
-        return JSON.parse(storedTheme);
-      } catch {
-        return true; // or default to system preference
-      }
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    const storedTheme = localStorage.getItem("theme") as "light" | "dark";
+    if (storedTheme) return storedTheme;
+
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return "dark";
+    } else {
+      return "light";
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
-  const [showGoToTopButton, setShowGoToTopButton] = useState(true);
-  const [showGoToBottomButton, setShowGoToBottomButton] = useState(true);
+  const [goToTopButton, setGoToTopButton] = useState<"show" | "hide">("show");
+  const [goToBottomButton, setGoToBottomButton] = useState<"show" | "hide">(
+    "show"
+  );
 
   // Load preferences on initial mount
   useEffect(() => {
-    const storedTheme = localStorage.getItem("isDarkTheme");
+    const storedTheme = localStorage.getItem("theme") as "light" | "dark";
     if (storedTheme) {
-      setIsDarkTheme(JSON.parse(storedTheme));
+      setTheme(storedTheme);
     } else {
       const prefersDark = window.matchMedia(
         "(prefers-color-scheme: dark)"
       ).matches;
-      setIsDarkTheme(prefersDark);
+      if (prefersDark) setTheme("dark");
     }
 
-    const storedGoToTopButton = localStorage.getItem("showGoToTopButton");
-    if (storedGoToTopButton !== null) {
-      setShowGoToTopButton(JSON.parse(storedGoToTopButton));
-    }
+    const storedGoToTopButton = localStorage.getItem("goToTopButton") as
+      | "show"
+      | "hide";
+    if (storedGoToTopButton) setGoToTopButton(storedGoToTopButton);
 
-    const storedGoToBottomButton = localStorage.getItem("showGoToBottomButton");
-    if (storedGoToBottomButton !== null) {
-      setShowGoToBottomButton(JSON.parse(storedGoToBottomButton));
-    }
+    const storedGoToBottomButton = localStorage.getItem("goToBottomButton") as
+      | "show"
+      | "hide";
+    if (storedGoToBottomButton) setGoToBottomButton(storedGoToBottomButton);
   }, []);
 
   // Update localStorage and apply changes
   useEffect(() => {
-    localStorage.setItem("isDarkTheme", JSON.stringify(isDarkTheme));
-  }, [isDarkTheme]);
+    localStorage.setItem("theme", theme);
+  }, [theme]);
 
   useEffect(() => {
-    localStorage.setItem(
-      "showGoToTopButton",
-      JSON.stringify(showGoToTopButton)
-    );
-  }, [showGoToTopButton]);
+    localStorage.setItem("goToTopButton", goToTopButton);
+  }, [goToTopButton]);
 
   useEffect(() => {
-    localStorage.setItem(
-      "showGoToBottomButton",
-      JSON.stringify(showGoToBottomButton)
-    );
-  }, [showGoToBottomButton]);
+    localStorage.setItem("goToBottomButton", goToBottomButton);
+  }, [goToBottomButton]);
 
-  const toggleOptionsOverlay = () => {
-    setShowOptionsOverlay((prev) => !prev);
+  const toggleOptionsOverlay = (newState: "show" | "hide") => {
+    setOptionsOverlay(newState);
   };
 
-  const toggleIsDark = () => {
-    setIsDarkTheme((prev) => !prev);
+  const toggleTheme = (newTheme: "light" | "dark") => {
+    setTheme(newTheme);
   };
 
-  const toggleGoToTopButton = () => {
-    setShowGoToTopButton((prev) => !prev);
+  const toggleGoToTopButton = (newState: "show" | "hide") => {
+    setGoToTopButton(newState);
   };
 
-  const toggleGoToBottomButton = () => {
-    setShowGoToBottomButton((prev) => !prev);
+  const toggleGoToBottomButton = (newState: "show" | "hide") => {
+    setGoToBottomButton(newState);
   };
 
   return (
     <OptionsContext.Provider
       value={{
-        showOptionsOverlay,
-        isDarkTheme,
-        showGoToTopButton,
-        showGoToBottomButton,
+        optionsOverlay,
+        theme,
+        goToTopButton,
+        goToBottomButton,
         toggleOptionsOverlay,
-        toggleIsDark,
+        toggleTheme,
         toggleGoToTopButton,
         toggleGoToBottomButton,
       }}

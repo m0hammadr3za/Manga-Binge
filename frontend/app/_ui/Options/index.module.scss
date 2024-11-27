@@ -18,49 +18,8 @@
   padding: 200px 100px;
 }
 
-.options__option {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.options__option-title {
-  font-size: 18px;
-  font-weight: 500;
-  opacity: 0.87;
-}
-
-.options__option-actions {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.options__action-button {
-  font-size: 16px;
-  font-weight: 600;
-  opacity: 0.5;
-}
-
-.options__action-button--active {
-  opacity: 0.8;
-}
-
-.options__divider {
-  font-size: 16px;
-  font-weight: 500;
-  opacity: 0.5;
-}
-
-.options__close-button-container {
+.options__close-button {
   position: fixed;
   top: 0;
   right: 0;
-}
-
-.options__close-button {
-  font-size: 40px;
-  font-weight: 500;
-  padding: 15px 35px;
-  opacity: 0.87;
 }

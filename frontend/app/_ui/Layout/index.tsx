@@ -7,7 +7,7 @@ import { Options } from "../Options";
 import { OptionsContext } from "@/app/_context/OptionsContext";
 
 export const Layout = ({ children }: { children: ReactNode }) => {
-  const { showOptionsOverlay } = useContext(OptionsContext);
+  const { optionsOverlay } = useContext(OptionsContext);
 
   return (
     <div className={styles.layout}>
@@ -18,7 +18,7 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 
         <div>{children}</div>
 
-        {showOptionsOverlay && <Options />}
+        {optionsOverlay === "show" && <Options />}
       </div>
     </div>
   );
