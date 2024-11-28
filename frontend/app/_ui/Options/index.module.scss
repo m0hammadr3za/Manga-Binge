@@ -6,11 +6,21 @@
   height: 100%;
   display: flex;
   place-content: center;
-  background-color: rgba(0, 0, 0, 0.97);
   z-index: 1000;
 }
 
+.options__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.95;
+}
+
 .options__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -22,4 +32,10 @@
   position: fixed;
   top: 0;
   right: 0;
+}
+
+[data-theme="light"] {
+  .options__background {
+    background-color: #fff;
+  }
 }

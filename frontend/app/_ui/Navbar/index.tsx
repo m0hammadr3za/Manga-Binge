@@ -1,6 +1,6 @@
 import { Logo } from "./Logo";
 import { OptionsButton } from "./OptionsButton";
-import styles from "./Navbar.module.scss";
+import styles from "./index.module.scss";
 
 export const Navbar = () => {
   return (

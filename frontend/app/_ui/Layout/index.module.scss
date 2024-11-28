@@ -1,20 +1,11 @@
 .layout {
-  --layout-max-width: 1366px;
-  --layout-padding-top: 60px;
-  --layout-padding-bottom: 100px;
-  --layout-margin-sides: 36px;
-  --nav-content-gap: 50px;
-
   display: flex;
   justify-content: center;
-  margin: 0 var(--layout-margin-sides);
-  padding: var(--layout-padding-top) 0 var(--layout-padding-bottom) 0;
+  padding: 50px 0 100px 0;
+  margin: 0 36px;
 }
 
 .layout__content {
-  display: flex;
-  flex-direction: column;
-  gap: var(--nav-content-gap);
-  max-width: var(--layout-max-width);
+  max-width: 1366px;
   width: 100%;
 }

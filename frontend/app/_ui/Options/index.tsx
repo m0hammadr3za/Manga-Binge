@@ -13,6 +13,8 @@ export const Options = () => {
 
   return (
     <div className={styles["options"]}>
+      <div className={styles["options__background"]} />
+
       <div className={styles["options__content"]}>
         <ThemeOption />
 

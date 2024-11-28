@@ -17,8 +17,8 @@ export const firePunch = {
   created_at: "2021-02-24",
   chapters: [
     {
-      number: 1,
-      volume: 1,
+      number: "1",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -438,8 +438,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 2,
-      volume: 1,
+      number: "2",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -564,8 +564,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 3,
-      volume: 1,
+      number: "3",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -678,8 +678,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 4,
-      volume: 1,
+      number: "4",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -810,8 +810,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 5,
-      volume: 1,
+      number: "5",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -919,8 +919,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 6,
-      volume: 1,
+      number: "6",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1034,8 +1034,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 7,
-      volume: 1,
+      number: "7",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1172,8 +1172,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 8,
-      volume: 1,
+      number: "8",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1310,8 +1310,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 9,
-      volume: 1,
+      number: "9",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1472,8 +1472,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 10,
-      volume: 1,
+      number: "10",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1598,8 +1598,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 11,
-      volume: 1,
+      number: "11",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1719,8 +1719,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 12,
-      volume: 1,
+      number: "12",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1839,8 +1839,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 13,
-      volume: 1,
+      number: "13",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -1978,8 +1978,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 14,
-      volume: 1,
+      number: "14",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2140,8 +2140,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 15,
-      volume: 1,
+      number: "15",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2296,8 +2296,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 16,
-      volume: 1,
+      number: "16",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2422,8 +2422,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 17,
-      volume: 1,
+      number: "17",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2518,8 +2518,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 18,
-      volume: 1,
+      number: "18",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2620,8 +2620,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 19,
-      volume: 1,
+      number: "19",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2782,8 +2782,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 20,
-      volume: 1,
+      number: "20",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -2933,8 +2933,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 21,
-      volume: 1,
+      number: "21",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3066,8 +3066,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 22,
-      volume: 1,
+      number: "22",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3187,8 +3187,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 23,
-      volume: 1,
+      number: "23",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3307,8 +3307,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 24,
-      volume: 1,
+      number: "24",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3442,8 +3442,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 25,
-      volume: 1,
+      number: "25",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3581,8 +3581,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 26,
-      volume: 1,
+      number: "26",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3689,8 +3689,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 27,
-      volume: 1,
+      number: "27",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3791,8 +3791,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 28,
-      volume: 1,
+      number: "28",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -3906,8 +3906,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 29,
-      volume: 1,
+      number: "29",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4062,8 +4062,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 30,
-      volume: 1,
+      number: "30",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4177,8 +4177,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 31,
-      volume: 1,
+      number: "31",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4291,8 +4291,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 32,
-      volume: 1,
+      number: "32",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4429,8 +4429,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 33,
-      volume: 1,
+      number: "33",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4573,8 +4573,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 34,
-      volume: 1,
+      number: "34",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4681,8 +4681,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 35,
-      volume: 1,
+      number: "35",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4795,8 +4795,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 36,
-      volume: 1,
+      number: "36",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -4915,8 +4915,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 37,
-      volume: 1,
+      number: "37",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5018,8 +5018,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 38,
-      volume: 1,
+      number: "38",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5120,8 +5120,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 39,
-      volume: 1,
+      number: "39",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5217,8 +5217,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 40,
-      volume: 1,
+      number: "40",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5367,8 +5367,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 41,
-      volume: 1,
+      number: "41",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5493,8 +5493,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 42,
-      volume: 1,
+      number: "42",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5625,8 +5625,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 43,
-      volume: 1,
+      number: "43",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5745,8 +5745,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 44,
-      volume: 1,
+      number: "44",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -5865,8 +5865,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 45,
-      volume: 1,
+      number: "45",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6022,8 +6022,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 46,
-      volume: 1,
+      number: "46",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6148,8 +6148,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 47,
-      volume: 1,
+      number: "47",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6263,8 +6263,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 48,
-      volume: 1,
+      number: "48",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6359,8 +6359,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 49,
-      volume: 1,
+      number: "49",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6522,8 +6522,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 50,
-      volume: 1,
+      number: "50",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6673,8 +6673,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 51,
-      volume: 1,
+      number: "51",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6782,8 +6782,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 52,
-      volume: 1,
+      number: "52",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -6914,8 +6914,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 53,
-      volume: 1,
+      number: "53",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7040,8 +7040,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 54,
-      volume: 1,
+      number: "54",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7148,8 +7148,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 55,
-      volume: 1,
+      number: "55",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7274,8 +7274,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 56,
-      volume: 1,
+      number: "56",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7406,8 +7406,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 57,
-      volume: 1,
+      number: "57",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7532,8 +7532,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 58,
-      volume: 1,
+      number: "58",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7634,8 +7634,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 59,
-      volume: 1,
+      number: "59",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7731,8 +7731,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 60,
-      volume: 1,
+      number: "60",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7828,8 +7828,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 61,
-      volume: 1,
+      number: "61",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -7984,8 +7984,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 62,
-      volume: 1,
+      number: "62",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8104,8 +8104,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 63,
-      volume: 1,
+      number: "63",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8218,8 +8218,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 64,
-      volume: 1,
+      number: "64",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8345,8 +8345,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 65,
-      volume: 1,
+      number: "65",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8453,8 +8453,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 66,
-      volume: 1,
+      number: "66",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8561,8 +8561,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 67,
-      volume: 1,
+      number: "67",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8676,8 +8676,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 68,
-      volume: 1,
+      number: "68",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8778,8 +8778,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 69,
-      volume: 1,
+      number: "69",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -8886,8 +8886,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 70,
-      volume: 1,
+      number: "70",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9030,8 +9030,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 71,
-      volume: 1,
+      number: "71",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9144,8 +9144,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 72,
-      volume: 1,
+      number: "72",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9288,8 +9288,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 73,
-      volume: 1,
+      number: "73",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9396,8 +9396,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 74,
-      volume: 1,
+      number: "74",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9498,8 +9498,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 75,
-      volume: 1,
+      number: "75",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9601,8 +9601,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 76,
-      volume: 1,
+      number: "76",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9698,8 +9698,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 77,
-      volume: 1,
+      number: "77",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9806,8 +9806,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 78,
-      volume: 1,
+      number: "78",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -9891,8 +9891,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 79,
-      volume: 1,
+      number: "79",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -10012,8 +10012,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 80,
-      volume: 1,
+      number: "80",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -10110,8 +10110,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 81,
-      volume: 1,
+      number: "81",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -10212,8 +10212,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 82,
-      volume: 1,
+      number: "82",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -10321,8 +10321,8 @@ export const firePunch = {
       ],
     },
     {
-      number: 83,
-      volume: 1,
+      number: "83",
+      volume: "1",
       pages: [
         {
           pageNumber: 1,
@@ -10434,39 +10434,39 @@ export const firePunch = {
   ],
 };
 
-export const getChapter = (chapterNumber: number) => {
-  // Find the index of the chapter with the given chapterNumber
-  const index = firePunch.chapters.findIndex(
-    (chapter) => chapter.number === chapterNumber
+export const getChapter = (chapterNumber: string | number) => {
+  const chapterNumberStr = chapterNumber.toString();
+
+  const sortedChapters = [...firePunch.chapters].sort(
+    (a, b) => parseFloat(a.number) - parseFloat(b.number)
   );
 
-  // If the chapter is not found, return null or handle the error as needed
+  const index = sortedChapters.findIndex(
+    (chapter) => chapter.number === chapterNumberStr
+  );
+
   if (index === -1) {
     return null;
   }
 
-  // Get the current chapter
-  const chapter = firePunch.chapters[index];
+  const chapter = sortedChapters[index];
 
-  // Get the previous chapter if it exists
   const prevChapter =
     index > 0
       ? {
-          number: firePunch.chapters[index - 1].number,
-          volume: firePunch.chapters[index - 1].volume,
+          number: sortedChapters[index - 1].number,
+          volume: sortedChapters[index - 1].volume,
         }
       : null;
 
-  // Get the next chapter if it exists
   const nextChapter =
-    index < firePunch.chapters.length - 1
+    index < sortedChapters.length - 1
       ? {
-          number: firePunch.chapters[index + 1].number,
-          volume: firePunch.chapters[index + 1].volume,
+          number: sortedChapters[index + 1].number,
+          volume: sortedChapters[index + 1].volume,
         }
       : null;
 
-  // Return the desired object
   return {
     prevChapter,
     chapter,

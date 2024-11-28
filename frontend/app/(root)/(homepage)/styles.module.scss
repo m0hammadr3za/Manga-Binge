@@ -1,3 +1,9 @@
+.home__content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .home__manga-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

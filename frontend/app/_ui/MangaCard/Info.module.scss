@@ -1,7 +1,4 @@
 .info {
-  --primary-info-max-width: 60%;
-  --primary-info-gap: 5px;
-
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -10,8 +7,8 @@
 .info__primary {
   display: flex;
   flex-direction: column;
-  gap: var(--primary-info-gap);
-  max-width: var(--primary-info-max-width);
+  gap: 5px;
+  max-width: 60%;
 }
 
 .info__secondary {
