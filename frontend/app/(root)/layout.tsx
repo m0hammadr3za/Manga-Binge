@@ -1,6 +1,5 @@
-import { Montserrat } from "next/font/google";
 import type { Metadata } from "next";
-import { ThemeProvider } from "../_context/ThemeContext";
+import { Montserrat } from "next/font/google";
 import { OptionsProvider } from "../_context/OptionsContext";
 import "../_styles/globals.scss";
 
@@ -22,9 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <OptionsProvider>
-          <ThemeProvider>{children}</ThemeProvider>
-        </OptionsProvider>
+        <OptionsProvider>{children}</OptionsProvider>
       </body>
     </html>
   );

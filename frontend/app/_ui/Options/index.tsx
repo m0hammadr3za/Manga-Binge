@@ -7,6 +7,7 @@ import { ThemeOption } from "./ThemeOption";
 import { GoToTopButtonOption } from "./GoToTopButtonOption";
 import { GoToBottomButtonOption } from "./GoToBottomButtonOption";
 import styles from "./index.module.scss";
+import { Scrollbar } from "./Scrollbar";
 
 export const Options = () => {
   const { toggleOptionsOverlay } = useContext(OptionsContext);
@@ -17,6 +18,8 @@ export const Options = () => {
 
       <div className={styles["options__content"]}>
         <ThemeOption />
+
+        <Scrollbar />
 
         <GoToTopButtonOption />
 
