@@ -1,5 +1,16 @@
-.single-chapter__content-container {
+.chapter-page {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 5px;
+  margin: 0 auto;
+}
+
+.chapter-page__navbar-container {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.chapter-page__content-container {
+  width: 100%;
 }

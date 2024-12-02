@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import { OptionsProvider } from "../_context/OptionsContext";
+import { OptionsOverlay } from "../_ui/Options/OptionsOverlay";
+import styles from "./layout.module.scss";
 import "../_styles/globals.scss";
 
 const montserrat = Montserrat({
@@ -21,7 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <OptionsProvider>{children}</OptionsProvider>
+        <OptionsProvider>
+          <div className={styles["layout"]}>{children}</div>
+
+          <OptionsOverlay />
+        </OptionsProvider>
       </body>
     </html>
   );

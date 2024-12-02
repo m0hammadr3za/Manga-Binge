@@ -1,6 +1,7 @@
 .chapter-view {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 80px;
   width: 100%;
 }
@@ -11,4 +12,5 @@
   align-items: center;
   gap: 50px;
   width: 100%;
+  max-width: 2000px;
 }

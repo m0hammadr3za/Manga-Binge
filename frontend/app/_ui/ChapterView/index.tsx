@@ -40,6 +40,7 @@ export const ChapterView = () => {
                 imageTitle={`${page.pageNumber}`}
                 width={page.width}
                 height={page.height}
+                isDouble={page.isDouble}
               />
             </Fragment>
           );

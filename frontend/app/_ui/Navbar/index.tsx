@@ -4,7 +4,7 @@ import styles from "./index.module.scss";
 
 export const Navbar = () => {
   return (
-    <div className={styles.navbar}>
+    <div className={styles["navbar"]}>
       <div>
         <Logo />
       </div>

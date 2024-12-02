@@ -10,11 +10,9 @@ export const Layout = ({ children }: { children: ReactNode }) => {
 
   return (
     <div className={styles["layout"]}>
-      <div className={styles["layout__content"]}>
-        <div>{children}</div>
+      <div>{children}</div>
 
-        {optionsOverlay === "show" && <Options />}
-      </div>
+      {optionsOverlay === "show" && <Options />}
     </div>
   );
 };

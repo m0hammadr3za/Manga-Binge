@@ -19,13 +19,11 @@ export const PageView = () => {
 
   return (
     <div className={styles["page-view"]}>
-      <div>
-        <PageViewNavigation
-          prevChapter={prevChapter}
-          chapter={chapter}
-          nextChapter={nextChapter}
-        />
-      </div>
+      <PageViewNavigation
+        prevChapter={prevChapter}
+        chapter={chapter}
+        nextChapter={nextChapter}
+      />
 
       <div className={styles["page-view__pages-container"]}>
         <Page
@@ -33,17 +31,16 @@ export const PageView = () => {
           imageTitle={`${currentPage.pageNumber}`}
           width={currentPage.width}
           height={currentPage.height}
+          isDouble={currentPage.isDouble}
         />
       </div>
 
-      <div>
-        <PageViewNavigation
-          prevChapter={prevChapter}
-          chapter={chapter}
-          nextChapter={nextChapter}
-          reverseDirection
-        />
-      </div>
+      <PageViewNavigation
+        prevChapter={prevChapter}
+        chapter={chapter}
+        nextChapter={nextChapter}
+        reverseDirection
+      />
     </div>
   );
 };

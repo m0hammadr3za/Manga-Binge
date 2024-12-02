@@ -1,7 +1,9 @@
-.home__content {
+.home {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .home__manga-list {

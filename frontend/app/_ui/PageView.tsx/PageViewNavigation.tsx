@@ -45,14 +45,14 @@ export const PageViewNavigation = (props: PageNavigationProps) => {
         reverseDirection && styles["page-view-navigation--reverse"]
       }`}
     >
-      <div>
+      <div className={styles["page-view-navigation__chapter-nav-container"]}>
         <ChapterNavigation
           previousChapterLink={previousChapterURL}
           nextChapterLink={nextChapterURL}
         />
       </div>
 
-      <div>
+      <div className={styles["page-view-navigation__page-nav-container"]}>
         <PageNavigation
           previousPageLink={previousPageURL}
           nextPageLink={nextPageURL}
