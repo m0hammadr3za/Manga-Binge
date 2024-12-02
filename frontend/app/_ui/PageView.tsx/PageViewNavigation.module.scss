@@ -1,0 +1,9 @@
+.page-view-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.page-view-navigation--reverse {
+  flex-direction: column-reverse;
+}

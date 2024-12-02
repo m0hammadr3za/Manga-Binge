@@ -1,27 +1,35 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
-import { usePathname } from "next/navigation";
+import { useParams } from "next/navigation";
 import { Fragment } from "react";
 import { getChapter } from "@/app/_mock-data/fire-punch";
+import { ChapterNavigation } from "../ChapterNavigation";
 import { Page } from "../Page";
-import { NavSection } from "./NavSection";
-import styles from "./index.module.scss";
+import styles from "./styles.module.scss";
 
 export const ChapterView = () => {
-  const pathname = usePathname();
+  const { mangaId, chapterNumber } = useParams();
 
-  const lastSegment = pathname.split("/").filter(Boolean).pop() as string;
-  const chapterNumber = parseInt(lastSegment, 10);
+  const chapterData = getChapter(chapterNumber as string);
+  const { prevChapter, chapter, nextChapter } = chapterData as any;
 
-  const chapterData = getChapter(chapterNumber) as any;
-  const { chapter } = chapterData;
+  const previousChapterLink = prevChapter
+    ? `/manga/${mangaId}/chapter/${prevChapter.number}`
+    : null;
+
+  const nextChapterLink = nextChapter
+    ? `/manga/${mangaId}/chapter/${nextChapter.number}`
+    : null;
 
   const pages = chapter.pages;
 
   return (
     <div className={styles["chapter-view"]}>
-      <NavSection chapterData={chapterData} />
+      <ChapterNavigation
+        previousChapterLink={previousChapterLink}
+        nextChapterLink={nextChapterLink}
+      />
 
       <div className={styles["chapter-view__pages-container"]}>
         {pages.map((page: any) => {
@@ -38,7 +46,10 @@ export const ChapterView = () => {
         })}
       </div>
 
-      <NavSection chapterData={chapterData} />
+      <ChapterNavigation
+        previousChapterLink={previousChapterLink}
+        nextChapterLink={nextChapterLink}
+      />
     </div>
   );
 };
