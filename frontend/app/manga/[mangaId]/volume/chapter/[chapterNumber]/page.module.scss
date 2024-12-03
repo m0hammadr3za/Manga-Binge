@@ -1,0 +1,17 @@
+.volume-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 0 auto;
+}
+
+.volume-view__navbar {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.volume-view__content {
+  width: 100%;
+  max-width: 2000px;
+}
