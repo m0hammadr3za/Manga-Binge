@@ -1,0 +1,33 @@
+.chapter-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.chapter-view__navbar {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.chapter-view__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.chapter-view__chapter-navigation {
+  width: 100%;
+  max-width: 1366px;
+}
+
+.chapter-view__pages-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}

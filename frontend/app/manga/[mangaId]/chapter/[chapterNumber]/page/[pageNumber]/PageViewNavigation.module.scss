@@ -1,0 +1,22 @@
+.page-view-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  width: 100%;
+}
+
+.page-view-navigation--reverse {
+  flex-direction: column-reverse;
+}
+
+.page-view-navigation__chapter-navigation,
+.page-view-navigation__page-navigation {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.page-view-navigation__chapter-navigation {
+  max-width: 1366px;
+}
