@@ -1,9 +1,8 @@
-// import Image from "next/image";
 import { Fragment } from "react";
 import { mangaList } from "../mock-data/manga-list";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { MangaCard } from "@/components/MangaCard/MangaCard";
-import styles from "./styles.module.scss";
+import styles from "./page.module.scss";
 
 const Home = () => {
   return (

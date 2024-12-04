@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export type ScrollbarType = "standard" | "hidden" | "custom";
+export type ScrollbarType = "show" | "hide";
 export type toggleScrollbar = (newState: ScrollbarType) => void;
 
 export const useScrollbar = (initialState: ScrollbarType) => {

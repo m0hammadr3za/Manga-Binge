@@ -1,4 +1,5 @@
 @use "variables";
+@use "scrollbar";
 
 *,
 *::before,
@@ -23,39 +24,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-text);
   margin: 0;
-}
-
-/* Scrollbar Hidden */
-html[scrollbar="hidden"],
-html[scrollbar="hidden"] body {
-  overflow: auto;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Hide scrollbar for Chrome, Safari, and Opera */
-html[scrollbar="hidden"] body::-webkit-scrollbar {
-  display: none;
-}
-
-/* Scrollbar Custom */
-html[scrollbar="custom"] body {
-  overflow: auto;
-}
-
-/* Customize scrollbar for WebKit browsers */
-html[scrollbar="custom"] body::-webkit-scrollbar {
-  width: 36px;
-}
-
-html[scrollbar="custom"] body::-webkit-scrollbar-track {
-  background: var(--color-background);
-  margin: 25px 0;
-}
-
-html[scrollbar="custom"] body::-webkit-scrollbar-thumb {
-  background-color: var(--color-text);
-  border-right: 22px solid var(--color-background);
 }
 
 img,

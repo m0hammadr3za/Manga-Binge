@@ -43,7 +43,7 @@ export const OptionsContext = createContext<OptionsContextProps>(
 export const OptionsProvider = ({ children }: { children: ReactNode }) => {
   const { optionsOverlay, toggleOptionsOverlay } = useOptionsOverlay("hide");
   const { theme, toggleTheme } = useTheme();
-  const { scrollbar, toggleScrollbar } = useScrollbar("standard");
+  const { scrollbar, toggleScrollbar } = useScrollbar("show");
   const { goToTopButton, toggleGoToTopButton } = useGoToTopButton("show");
   const { goToBottomButton, toggleGoToBottomButton } =
     useGoToBottomButton("show");

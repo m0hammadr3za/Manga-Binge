@@ -1,0 +1,12 @@
+* {
+  scrollbar-color: hsl(0, 0%, 67%) transparent;
+  scrollbar-gutter: stable both-edges;
+}
+
+[theme="light"] {
+  scrollbar-color: hsl(0, 0%, 38%);
+}
+
+[scrollbar="hide"] {
+  scrollbar-color: transparent transparent;
+}

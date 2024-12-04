@@ -15,28 +15,19 @@ export const ScrollbarOption = () => {
 
       <ActionButtonsContainer>
         <ActionButton
-          active={scrollbar === "standard"}
-          onClick={() => toggleScrollbar("standard")}
+          active={scrollbar === "show"}
+          onClick={() => toggleScrollbar("show")}
         >
-          Standard
+          Show
         </ActionButton>
 
         <ButtonsSeparator />
 
         <ActionButton
-          active={scrollbar === "hidden"}
-          onClick={() => toggleScrollbar("hidden")}
+          active={scrollbar === "hide"}
+          onClick={() => toggleScrollbar("hide")}
         >
-          Hidden
-        </ActionButton>
-
-        <ButtonsSeparator />
-
-        <ActionButton
-          active={scrollbar === "custom"}
-          onClick={() => toggleScrollbar("custom")}
-        >
-          Custom
+          Hide
         </ActionButton>
       </ActionButtonsContainer>
     </OptionContainer>
