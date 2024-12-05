@@ -12,7 +12,7 @@ export const OptionsButton = () => {
       className={styles["options-button"]}
       onClick={() => toggleOptionsOverlay("show")}
     >
-      OPTIONS
+      Options
     </button>
   );
 };
